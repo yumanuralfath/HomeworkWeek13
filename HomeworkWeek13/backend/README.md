@@ -1,8 +1,12 @@
-- lakukan installasi dependencies
+# How To run on your local Machine-
+
+lakukan installasi dependencies
+
 - pastikan memiliki docker
 - pastikan memiliki docker-compose
 - jalankan perintah `docker-compose up -d`
 - install dependencies dengan perintah `yarn install`
+- ubah nama env-example menjadi .env dan ganti jwt secret key
 - lakukan migrasi database dengan perintah `yarn migrate`
 - jalankan perintah `yarn prisma generate`
 - jalankan perintah `yarn start`
@@ -10,9 +14,7 @@
 
 **Endpoint**
 
-
 # POST /register
-
 
 Endpoint untuk mendaftarkan pengguna baru.
 
@@ -28,8 +30,8 @@ password (string) : Password pengguna.
 
 user (object) : Objek pengguna yang baru saja dibuat.
 
-
 # POST /login
+
 Endpoint untuk melakukan autentikasi pengguna
 
 ## Request Body
@@ -39,8 +41,8 @@ email (string) : Alamat email pengguna.
 password (string) : Password pengguna.
 
 ## Response
-token (string) : Token autentikasi yang dihasilkan.
 
+token (string) : Token autentikasi yang dihasilkan.
 
 # POST /books
 
@@ -48,9 +50,11 @@ Endpoint untuk membuat buku baru.
 
 ## Request Headers
 
- Authorization (string) : Token autentikasi.
+Authorization (string) : Token autentikasi.
+
 ## Request Body
- (Multi-part Form)
+
+(Multi-part Form)
 title (string) : Judul buku.
 
 author (string) : Nama penulis buku.
@@ -68,6 +72,7 @@ image (file) : Gambar sampul buku.
 book (object) : Objek buku yang baru saja dibuat.
 
 # GET /books
+
 Endpoint untuk mengambil semua buku yang tersedia.
 
 ### Response
@@ -75,6 +80,7 @@ Endpoint untuk mengambil semua buku yang tersedia.
 books (array) : Kumpulan objek buku yang tersedia.
 
 # PUT /books/:id
+
 Endpoint untuk mengubah data buku.
 
 ## Request Headers
@@ -95,16 +101,19 @@ publisher (string) : Nama penerbit buku.
 year (string) : Tahun terbit buku.
 
 pages (string) : Jumlah halaman buku.
+
 ## Response
 
 book (object) : Objek buku yang telah diubah.
 
 # DELETE /books/:id
+
 Endpoint untuk menghapus buku.
 
 ## Request Headers
 
 Authorization (string) : Token autentikasi.
+
 ## Request Parameters
 
 id (number) : ID buku yang akan dihapus.
@@ -113,8 +122,8 @@ id (number) : ID buku yang akan dihapus.
 
 book (object) : Objek buku yang telah dihapus.
 
-
 # GET /books/:id
+
 Endpoint untuk mendapatkan detail buku berdasarkan ID.
 
 ## Request Headers

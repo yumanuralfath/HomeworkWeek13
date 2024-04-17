@@ -11,7 +11,7 @@ const Footer = () => {
     >
       <Text fontSize="xs">
         {new Date().getFullYear()} -{" "}
-        <Link href="https://github.com/yumanuralfath" isExternal>
+        <Link href="https://github.com/yumanuralfath/HomeworkWeek13" isExternal>
           yumana
         </Link>
       </Text>

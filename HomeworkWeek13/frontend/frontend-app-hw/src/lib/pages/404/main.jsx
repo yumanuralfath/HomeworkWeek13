@@ -1,12 +1,4 @@
-import {
-  Box,
-  Button,
-  Grid,
-  Heading,
-  Image,
-  Link,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Button, Grid, Heading, Image, Text } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
 const Page404 = () => {
@@ -20,9 +12,6 @@ const Page404 = () => {
 
       <Box maxWidth={[280, 400]} marginX="auto">
         <Image width={400} src="/assets/404.svg" />
-        <Link fontSize="xs" href="https://stories.freepik.com/web" isExternal>
-          Illustration by Freepik Stories
-        </Link>
       </Box>
 
       <Box>

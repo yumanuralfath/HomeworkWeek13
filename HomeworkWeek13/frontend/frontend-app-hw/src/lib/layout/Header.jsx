@@ -1,6 +1,5 @@
-import { Box, Flex } from "@chakra-ui/react";
-
-import ThemeToggle from "./ThemeToggle";
+import { Flex } from "@chakra-ui/react";
+import Menu from "../components/Menu";
 
 const Header = () => {
   return (
@@ -12,9 +11,7 @@ const Header = () => {
       justifyContent="center"
       gridGap={2}
     >
-      <Box marginLeft="auto">
-        <ThemeToggle />
-      </Box>
+      <Menu />
     </Flex>
   );
 };

@@ -1,6 +1,5 @@
 import { Button } from "@chakra-ui/react";
 import { RiHome3Line, RiLoginBoxLine } from "react-icons/ri";
-import { GiArchiveRegister } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
 
 export const Logo = () => {
@@ -13,15 +12,6 @@ export const Logo = () => {
   );
 };
 
-export const RegisterLogo = () => {
-  const navigate = useNavigate();
-  const handleRegister = () => navigate("/register");
-  return (
-    <Button onClick={handleRegister} leftIcon={<GiArchiveRegister />}>
-      SIGN UP
-    </Button>
-  );
-};
 
 export const LoginLogo = () => {
   const navigate = useNavigate();

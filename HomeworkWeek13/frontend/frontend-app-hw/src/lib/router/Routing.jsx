@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 import Page404 from "../pages/404/main";
 
 import { routes, privateRoutes } from "./routes";

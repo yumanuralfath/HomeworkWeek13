@@ -14,17 +14,20 @@ import Swal from "sweetalert2";
 
 import { login } from "../../../components/Auth/auth";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const LoginForm = ({ showPassword, handleShowClick }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async () => {
     try {
       setIsLoading(true);
       await login({ email, password });
+      navigate("/books");
     } catch (err) {
       const { response } = err;
       Swal.fire({

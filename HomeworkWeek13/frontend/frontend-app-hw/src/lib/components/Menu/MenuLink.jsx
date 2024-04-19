@@ -1,6 +1,6 @@
 import { Box, Stack } from "@chakra-ui/react";
 import PropTypes from "prop-types";
-import { LoginLogo, Logo } from "./Logo";
+import { BookLogo, LoginLogo, Logo } from "./Logo";
 
 const MenuLinks = ({ isOpen }) => {
   return (
@@ -17,6 +17,7 @@ const MenuLinks = ({ isOpen }) => {
       >
         <Logo />
         <LoginLogo />
+        <BookLogo />
       </Stack>
     </Box>
   );

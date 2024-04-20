@@ -98,7 +98,15 @@ const BooksCard2 = () => {
         books.map((book, index) => (
           <Card key={index} maxW="300px">
             <CardBody>
-              <Image src={book.image} alt={book.title} borderRadius="lg" />
+              <Image
+                src={
+                  book.image.startsWith("http")
+                    ? book.image
+                    : `http://localhost:8000/${book.image}`
+                }
+                alt={book.title}
+                borderRadius="lg"
+              />
               <Stack mt="6" spacing="3">
                 <Heading size="md">{book.title}</Heading>
                 <Text>PAGE: {book.pages}</Text>

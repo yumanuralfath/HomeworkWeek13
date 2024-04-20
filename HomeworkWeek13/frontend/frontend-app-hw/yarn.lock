@@ -391,7 +391,7 @@
     "@chakra-ui/dom-utils" "2.1.0"
     react-focus-lock "^2.9.4"
 
-"@chakra-ui/form-control@2.2.0":
+"@chakra-ui/form-control@2.2.0", "@chakra-ui/form-control@^2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@chakra-ui/form-control/-/form-control-2.2.0.tgz#69c771d6406ddac8ab357ae88446cc11827656a4"
   integrity sha512-wehLC1t4fafCVJ2RvJQT2jyqsAwX7KymmiGqBu7nQoQz8ApTkGABWpo/QwDh3F/dBLrouHDoOvGmYTqft3Mirw==

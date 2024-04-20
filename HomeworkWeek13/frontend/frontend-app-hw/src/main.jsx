@@ -7,7 +7,9 @@ import "@fontsource/plus-jakarta-sans/latin.css";
 
 import { theme } from "./lib/style/theme/main.js";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+const rootEl = document.getElementById("root");
+const root = ReactDOM.createRoot(rootEl);
+root.render(
   <React.StrictMode>
     <ColorModeScript initialColorMode={theme.config?.initialColorMode} />
     <App />

@@ -79,7 +79,7 @@ export const LoginForm = ({ showPassword, handleShowClick }) => {
           variant="solid"
           colorScheme="teal"
           width="full"
-          onClick={handleSubmit}
+          onClick={() => handleSubmit()}
           isLoading={isLoading}
           loadingText="Logging In..."
         >

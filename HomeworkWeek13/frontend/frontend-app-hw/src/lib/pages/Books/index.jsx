@@ -1,12 +1,12 @@
 import { Grid } from "@chakra-ui/react";
 import TitlePage from "./components/titlePage";
-import BooksCard from "./components/bookcard";
+import BooksCard2 from "./components/bookcard3";
 
 const Book = () => {
   return (
     <Grid gap={10}>
       <TitlePage />
-      <BooksCard />
+      <BooksCard2 />
     </Grid>
   );
 };

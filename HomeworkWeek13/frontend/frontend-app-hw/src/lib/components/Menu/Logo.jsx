@@ -25,7 +25,12 @@ export const LoginLogo = () => {
   };
 
   return isAuth ? (
-    <Button onClick={handleLogout} leftIcon={<RiLoginBoxLine />}>
+    <Button
+      as="button"
+      onClick={handleLogout}
+      variant="outline"
+      leftIcon={<RiLoginBoxLine />}
+    >
       LOG OUT
     </Button>
   ) : null;
@@ -36,7 +41,7 @@ export const BookLogo = () => {
   const handleToBook = () => navigate("/books");
 
   return (
-    <Button onClick={handleToBook} leftIcon={<RiBook3Fill />}>
+    <Button  onClick={handleToBook} leftIcon={<RiBook3Fill />}>
       BOOK
     </Button>
   );
